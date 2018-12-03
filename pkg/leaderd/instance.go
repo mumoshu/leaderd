@@ -15,6 +15,7 @@ type Instance struct {
 	Table  string
 
 	Timeout int64
+	Interval int
 }
 
 func (l Instance) GetCurrentLeader() (*CurrentLeader, error) {
