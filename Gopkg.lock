@@ -2,7 +2,7 @@
 
 
 [[projects]]
-  digest = "1:31e48e851ab690fcd65ec84ca4d06ba8554a6443999fab1f6a14cfe5581d6e61"
+  digest = "1:67ce50d07ee02cf990c19a799c756d6dbee06c705987dab16c503ec30a25f5a7"
   name = "github.com/aws/aws-sdk-go"
   packages = [
     "aws",
@@ -13,34 +13,41 @@
     "aws/corehandlers",
     "aws/credentials",
     "aws/credentials/ec2rolecreds",
+    "aws/credentials/endpointcreds",
+    "aws/credentials/stscreds",
+    "aws/crr",
+    "aws/csm",
     "aws/defaults",
     "aws/ec2metadata",
+    "aws/endpoints",
     "aws/request",
     "aws/session",
-    "private/endpoints",
+    "aws/signer/v4",
+    "internal/ini",
+    "internal/sdkio",
+    "internal/sdkrand",
+    "internal/sdkuri",
+    "internal/shareddefaults",
+    "private/protocol",
     "private/protocol/json/jsonutil",
     "private/protocol/jsonrpc",
+    "private/protocol/query",
+    "private/protocol/query/queryutil",
     "private/protocol/rest",
-    "private/signer/v4",
-    "private/waiter",
+    "private/protocol/xml/xmlutil",
     "service/dynamodb",
+    "service/sts",
   ]
   pruneopts = "UT"
-  revision = "0869a433c1d7bbcd6bde8e217084c0aa1354b596"
+  revision = "ceab7b7ac6f535d1397f124620720b5145f1ad59"
+  version = "v1.15.88"
 
 [[projects]]
-  digest = "1:56fc2c5be7f0e6dfa1858d82c700c7c07793288b16c99f1ffd072b3607ddfbc0"
-  name = "github.com/go-ini/ini"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "887c8d36f8411bededfd2281daa3907f5f36552e"
-
-[[projects]]
-  digest = "1:a72f6de512c76a210f71cf4fc669cb1051c7a326a0f8fd733164c654c0a23d86"
+  digest = "1:e22af8c7518e1eab6f2eab2b7d7558927f816262586cd6ed9f349c97a6c285c4"
   name = "github.com/jmespath/go-jmespath"
   packages = ["."]
   pruneopts = "UT"
-  revision = "c01cf91b011868172fdcd9f41838e80c9d716264"
+  revision = "0b12d6b5"
 
 [solve-meta]
   analyzer-name = "dep"
